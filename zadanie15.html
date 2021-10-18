@@ -1,0 +1,40 @@
+<html>
+  
+   <head>
+      
+       <title>Zadanie 15</title>
+       
+   </head>
+   
+    <body>
+       
+        <div style="color:orangered;font-size:40px;">
+
+         <script language="JavaScript">
+
+                 var l1_iwa=prompt("Podaj x1","1");
+                 var l2_iwa=prompt("Podaj x2","2");
+
+                 var x1_iwa=parseFloat(l1_iwa);
+                 var x2_iwa=parseFloat(l2_iwa);
+
+                 var y_iwa= 3 * Math.pow ( x1_iwa, ( 6 / 8 ));
+
+                 var y1_iwa=( 2 * Math.cos ( x1_iwa * Math.PI / 180 )) + ( 2 * Math.sin ( x1_iwa*Math.PI / 180 ));
+
+                 var y3_iwa= Math.cbrt ( Math.pow ( x1_iwa, 5 ) + ( 2 * Math.pow ( x2_iwa, 4 ))) * Math.abs ( x1_iwa - x2_iwa );
+             
+
+        document.write("x1 = "+x1_iwa);
+        document.write("  |  x2 = "+x2_iwa);
+        document.write("<br><br> Y = "+y_iwa);
+        document.write("<br>  Y1 = "+y1_iwa);
+        document.write("<br>  Y3 = "+y3_iwa);
+
+         </script>
+         
+        </div>
+        
+    </body>
+    
+</html>
