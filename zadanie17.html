@@ -1,0 +1,55 @@
+<html>
+
+   <head>
+   
+      <title> Użycie fukcji </title>
+      <meta charset="utf-8">
+	  
+   </head>
+   
+   <body>
+   
+      <div style="color:green;font-size:35px;">
+	  
+         <script language="JavaScript">
+		 
+            var a=parseFloat(prompt("a=",""));
+            var b=parseFloat(prompt("b=",""));
+			
+            function suma_iwa(a, b) {
+            return a + b;
+            }
+			function odejmowanie_iwa(a, b) {
+            return a - b;
+            }
+			function mnozenie_iwa(a, b) {
+            return a * b;
+            }
+			function od_kwadratu_a_iwa(a) {
+            return (a * a);
+            }
+			function od_kwadratu_b_iwa(b) {
+            return (b * b);
+            }
+			function reszta_z_dzielenia_a_przez_b_iwa(a, b) {
+            return (a%=b);
+            }
+			
+			
+			
+			
+            document.write("Suma = "+suma_iwa(a,b)+"<br>");
+			document.write("Różnica = "+odejmowanie_iwa(a,b)+"<br>");
+			document.write("Mnożenie = "+mnozenie_iwa(a,b)+"<br>");
+			document.write("Potęga a = "+od_kwadratu_a_iwa(a)+"<br>");
+			document.write("Potęga b = "+od_kwadratu_b_iwa(b)+"<br>");
+			document.write("Reszta z dzielenia = "+reszta_z_dzielenia_a_przez_b_iwa(a, b)+"<br>");
+			
+			
+         </script>
+		 
+      </div>
+	  
+   </body>
+   
+</html>
