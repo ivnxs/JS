@@ -1,0 +1,90 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <textarea rows="100" cols="300">
+<html>
+  
+   <head>
+     
+      <title>
+         Zadanie 19
+      </title>
+      
+      <script language="JavaScript">
+          
+         function obwod_iwasieczko(a_iwa,h_iwa)
+          
+         {
+          a_liczba=parseFloat(a_iwa)
+          h_liczba=parseFloat(h_iwa)
+             
+          obwod_iwasieczko_wynik=2*a_liczba+2*h_liczba
+             
+             
+          document.getElementsByName('obw')[0].value=obwod_iwasieczko_wynik.toFixed(2);
+          alert("Obwód = " + obwod_iwasieczko_wynik.toFixed(2)+" cm");
+          wyprowadz_obwod_iwa.innerHTML="Obwód = " + obwod_iwasieczko_wynik.toFixed(2) + " cm"+"<br>";
+         }
+          
+          
+         function pole_iwasieczko(a_iwa,h_iwa)
+         {
+          a_liczba = parseFloat(a_iwa)
+          h_liczba = parseFloat(h_iwa)
+             
+          pole_iwasieczko_wynik = a_liczba * h_liczba
+             
+          document.getElementsByName('pole')[0].value=pole_iwasieczko_wynik.toFixed(2);
+          alert("Pole = " +pole_iwasieczko_wynik.toFixed(2) + " cm^2");
+          wyprowadz_pole_iwa.innerHTML="Pole = " + pole_iwasieczko_wynik.toFixed(2) + " cm^2"; 
+         }
+          
+          
+          
+          
+      </script>
+      
+   </head>
+   
+   <body>
+     
+      Obliczenie pola oraz obwodu prostokąta
+      <br> <br>
+      <form name="formularz" action="..." onsubmit="obwod_iwasieczko(this.promien.value,this.wysokosc.value);
+         pole_iwasieczko(this.promien.value,this.wysokosc.value);return false">
+         
+         Podaj a_dana_iwa=
+         <input size="6" name="promien">
+         
+         Podaj b_dana_iwa=
+         <input size="6" name="wysokosc">
+         
+         <br>
+         <br>
+         
+         <input TYPE="submit" Value="oblicz" >
+         
+         <br>
+         <br>
+         
+         Obwod=
+         <input size="6" name="obw">
+         
+         Pole=
+         <input size="6" name="pole">
+         
+      </form>
+      
+      <table>
+         <tr id="wyprowadz_obwod_iwa"></tr>
+         <tr id="wyprowadz_pole_iwa"></tr>
+      </table>
+      
+   </body>
+   
+</html>
+        </textarea>
+    </body>
+</html>
