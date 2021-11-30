@@ -1,0 +1,30 @@
+<html>
+   <head>
+      <title>Przykład pętli</title>
+      <script language="JavaScript">
+         var liczba1=prompt("R =","");
+         var R=parseFloat(liczba1);
+         var licznik_iwa=0;
+         
+         for (var i=-Math.round(R)-1; i<=Math.round(R)+1; i++)
+         
+                for ( var j=-Math.round(R)-1; j<=Math.round(R)+1; j++){
+         	for ( var j=-R; j<=R; j++){
+         	d=Math.sqrt(i*i+j*j);
+         	
+         		if (d<=R) {licznik_iwa++};
+         	
+         		document.write("("+i+" , "+j+")"+" ");
+                	}
+         	
+         	document.write("<br>");
+         	}
+                	document.write("Licznik = "+licznik_iwa+"<br>");
+                	
+                	
+             
+      </script>
+   </head>
+   <body>
+   </body>
+</html>
